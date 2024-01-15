@@ -20,7 +20,7 @@ def blog():
 
 @app.route("/pricing")
 def pricing():
-    return "Our pricing for web development starts at $55 per hour."
+    return "Our pricing for web development starts at $70 per hour."
 
 
 @app.route("/contact")
@@ -32,10 +32,13 @@ def contact():
 def contact():
     return "You can chat with live agent!"
 
-
 @app.route("/services")
 def services():
     return "We offer the following services: web development, data analysis, SEO."
+
+@app.route("/internal")
+def home():
+    return "System management portal"
 
 
 if __name__ == "__main__":
